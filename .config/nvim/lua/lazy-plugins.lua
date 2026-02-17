@@ -55,6 +55,8 @@ require('lazy').setup({
 
   require 'rstudley.plugins.catppuccin',
 
+  require 'rstudley.plugins.oil',
+
   -- require 'rstudley.plugins.debug',
 
   -- require 'rstudley.plugins.indent_line',
