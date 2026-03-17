@@ -46,7 +46,7 @@ map('n', "De", ":call vimspector#Evaluate()<cr>")
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
-
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-t>', '<cmd>e .<CR>', { desc = 'New buffer with oil.nvim' })
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
 --  See `:help vim.highlight.on_yank()`

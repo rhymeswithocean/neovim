@@ -72,7 +72,7 @@ return {
       ['<C-l>'] = 'actions.refresh',
       ['-'] = { 'actions.parent', mode = 'n' },
       ['_'] = { 'actions.open_cwd', mode = 'n' },
-      ['`'] = { 'actions.cd', mode = 'n' },
+      ['\\'] = { 'actions.cd', mode = 'n' },
       ['g~'] = { 'actions.cd', opts = { scope = 'tab' }, mode = 'n' },
       ['gs'] = { 'actions.change_sort', mode = 'n' },
       ['gx'] = 'actions.open_external',
@@ -83,7 +83,7 @@ return {
     use_default_keymaps = true,
     view_options = {
       -- Show files and directories that start with "."
-      show_hidden = false,
+      show_hidden = true,
       -- This function defines what is considered a "hidden" file
       is_hidden_file = function(name, bufnr)
         local m = name:match '^%.'
