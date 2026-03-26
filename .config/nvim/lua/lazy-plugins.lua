@@ -64,6 +64,8 @@ require('lazy').setup({
   -- require 'rstudley.plugins.lint',
 
   require 'rstudley.plugins.autopairs',
+
+  require 'rstudley.plugins.java',
 }, {
 
   ui = {

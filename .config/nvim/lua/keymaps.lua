@@ -46,8 +46,8 @@ map('n', "De", ":call vimspector#Evaluate()<cr>")
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
-vim.keymap.set({ 'n', 'i', 'v' }, '<M-t>', '<cmd>e .<CR>', { desc = 'New buffer with oil.nvim' })
-vim.keymap.set({ 'n', 'i', 'v' }, '<C-t>', '<cmd>tabedit .<CR>', { desc = 'New tab with oil.nvim' })
+vim.keymap.set('n', '<M-t>', '<cmd>e .<CR>', { desc = 'New buffer with oil.nvim' })
+vim.keymap.set('n', '<C-t>', '<cmd>tabedit .<CR>', { desc = 'New tab with oil.nvim' })
 
 vim.cmd 'inoremap <S-Tab> <C-d>'
 
