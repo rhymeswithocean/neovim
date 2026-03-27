@@ -18,6 +18,11 @@ return {
     'folke/which-key.nvim',
     event = 'VeryLazy', -- Sets the loading event to 'VimEnter'
     opts = {
+      keys = {
+          scroll_down = "<c-j>",
+          scroll_up = "<c-k>",
+      },
+
       icons = {
         -- set icon mappings to true if you have a Nerd Font
         mappings = vim.g.have_nerd_font,
