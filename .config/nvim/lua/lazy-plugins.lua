@@ -25,47 +25,52 @@ require('lazy').setup({
 
   --  require 'plugins/*.lua',
 
-  require 'rstudley.plugins.gitsigns',
+  require 'plugins.gitsigns',
 
-  require 'rstudley.plugins.which-key',
+  require 'plugins.which-key',
 
-  require 'rstudley.plugins.telescope',
+  require 'plugins.telescope',
 
-  require 'rstudley.plugins.lspconfig',
+  require 'plugins.lspconfig',
 
-  require 'rstudley.plugins.conform',
+  require 'plugins.conform',
 
-  require 'rstudley.plugins.cmp',
+  require 'plugins.cmp',
 
-  require 'rstudley.plugins.tokyonight',
+  require 'plugins.tokyonight',
 
-  require 'rstudley.plugins.todo-comments',
+  require 'plugins.todo-comments',
 
-  require 'rstudley.plugins.mini',
+  require 'plugins.mini',
 
-  require 'rstudley.plugins.treesitter',
+  require 'plugins.treesitter',
 
-  require 'rstudley.plugins.neo-tree',
+  require 'plugins.neo-tree',
 
-  require 'rstudley.plugins.bufferline',
+  require 'plugins.bufferline',
 
-  require 'rstudley.plugins.fzf',
+  require 'plugins.fzf',
 
-  require 'rstudley.plugins.rust',
+  require 'plugins.rust',
 
-  require 'rstudley.plugins.catppuccin',
+  require 'plugins.catppuccin',
 
-  require 'rstudley.plugins.oil',
+  require 'plugins.oil',
 
-  -- require 'rstudley.plugins.debug',
+  -- require 'plugins.debug',
 
-  -- require 'rstudley.plugins.indent_line',
+  -- require 'plugins.indent_line',
 
-  -- require 'rstudley.plugins.lint',
+  -- require 'plugins.lint',
 
-  require 'rstudley.plugins.autopairs',
+  require 'plugins.autopairs',
 
-  require 'rstudley.plugins.java',
+  require 'plugins.java',
+  
+  require 'plugins.noice',
+
+  require 'plugins.snacks'
+
 }, {
 
   ui = {
