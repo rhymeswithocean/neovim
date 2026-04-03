@@ -1,8 +1,7 @@
 return {
   'ibhagwan/fzf-lua',
-  -- optional for icon support
   dependencies = { 'nvim-tree/nvim-web-devicons' },
-  -- or if using mini.icons/mini.nvim
-  -- dependencies = { "echasnovski/mini.icons" },
+  cmd = 'FzfLua',
   opts = {},
 }
+-- vim: ts=2 sts=2 sw=2 et
