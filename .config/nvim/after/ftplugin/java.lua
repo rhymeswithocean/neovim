@@ -1,1 +1,1 @@
-require('rstudley.languages.java')
+require('languages.java')

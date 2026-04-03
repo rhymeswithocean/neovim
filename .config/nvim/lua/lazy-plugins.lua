@@ -68,8 +68,6 @@ require('lazy').setup({
   require 'plugins.autopairs',
 
   require 'plugins.java',
-  
-  require 'plugins.noice',
 
   require 'plugins.snacks'
 

@@ -33,6 +33,38 @@ return {
           },
         },
       },
+      dashboard = {
+        width = 60,
+        sections = {
+          {
+            text = {
+              { '  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗\n', hl = 'SnacksDashboardHeader' },
+              { '  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║\n', hl = 'SnacksDashboardHeader' },
+              { '  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║\n', hl = 'SnacksDashboardHeader' },
+              { '  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║\n', hl = 'SnacksDashboardHeader' },
+              { '  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║\n', hl = 'SnacksDashboardHeader' },
+              { '  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝\n', hl = 'SnacksDashboardHeader' },
+            },
+            padding = 1,
+          },
+          {
+            section = 'keys',
+            gap = 1,
+            padding = 1,
+          },
+          { section = 'startup' },
+        },
+        preset = {
+          keys = {
+            { icon = ' ', key = 'f', desc = 'Find File', action = ':lua Snacks.picker.files({ hidden = true, ignored = true })' },
+            { icon = ' ', key = 'r', desc = 'Recent Files', action = ':lua Snacks.picker.recent()' },
+            { icon = ' ', key = 'g', desc = 'Live Grep',    action = ':lua Snacks.picker.grep()' },
+            { icon = ' ', key = 'c', desc = 'Config',       action = ":lua Snacks.picker.files({ cwd = vim.fn.stdpath('config') })" },
+            { icon = '󰒲 ', key = 'l', desc = 'Lazy',         action = ':Lazy' },
+            { icon = ' ', key = 'q', desc = 'Quit',         action = ':qa' },
+          },
+        },
+      },
     },
   },
 }

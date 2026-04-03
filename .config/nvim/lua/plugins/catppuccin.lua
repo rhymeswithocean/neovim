@@ -15,6 +15,7 @@ return {
     config = function(_, opts)
       require('catppuccin').setup(opts)
       vim.cmd 'colorscheme catppuccin-macchiato'
+      vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { fg = '#c6a0f6' })
     end,
   },
 }
