@@ -1,6 +1,6 @@
 require('lazy').setup({
   { 'tpope/vim-sleuth', event = 'BufReadPre' },
-  
+
   require 'plugins.hop',
   require 'plugins.lazygit',
   require 'plugins.toggleterm',
@@ -19,9 +19,6 @@ require('lazy').setup({
   require 'plugins.rust',
   require 'plugins.catppuccin',
   require 'plugins.oil',
-  -- require 'plugins.debug',
-  -- require 'plugins.indent_line',
-  -- require 'plugins.lint',
   require 'plugins.autopairs',
   require 'plugins.java',
   require 'plugins.snacks',
