@@ -49,19 +49,6 @@ return {
       end
 
       vim.cmd("autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()")
-      
-      local Terminal = require("toggleterm.terminal").Terminal
-      local lazygit = Terminal:new({
-        cmd = "lazygit",
-        dir = "git_dir",
-        direction = "float",
-        hidden = true,
-        float_opts = { border = "curved" },
-        on_open = function(term)
-          vim.cmd("startinsert!")
-          vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", { noremap = true, silent = true })
-        end,
-      })
 
       -- Cycle layout
       local layouts = { "float", "horizontal", "vertical", "tab" }
@@ -77,7 +64,6 @@ return {
       vim.keymap.set("n", "<leader>an", "<cmd>TermNew<CR>",    { desc = "Terminal: new" })
       vim.keymap.set("n", "<leader>as", "<cmd>TermSelect<CR>", { desc = "Terminal: select" })
 
-      vim.keymap.set("n", "<leader>g", function() lazygit:toggle() end, { desc = "Toggle lazygit" })
     end,
   },
 }

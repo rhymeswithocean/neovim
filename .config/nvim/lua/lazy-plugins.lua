@@ -25,6 +25,8 @@ require('lazy').setup({
 
   --  require 'plugins/*.lua',
 
+  require 'plugins.lazygit',
+
   require 'plugins.toggleterm',
 
   require 'plugins.gitsigns',
