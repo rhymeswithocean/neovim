@@ -23,7 +23,7 @@ return {
           underline = true,
         },
         chunk = {
-          enabled = true,
+          enabled = false,
           char = {
             corner_top    = '╭',
             corner_bottom = '╰',

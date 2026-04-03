@@ -25,6 +25,8 @@ require('lazy').setup({
 
   --  require 'plugins/*.lua',
 
+  require 'plugins.toggleterm',
+
   require 'plugins.gitsigns',
 
   require 'plugins.which-key',
@@ -36,8 +38,6 @@ require('lazy').setup({
   require 'plugins.conform',
 
   require 'plugins.cmp',
-
-  require 'plugins.tokyonight',
 
   require 'plugins.todo-comments',
 

@@ -68,6 +68,7 @@ return {
         { '<leader>r', group = '[R]ename' },
         { '<leader>f', group = '[F]ind' },
         { '<leader>w', group = '[W]orkspace' },
+        { '<leader>a', group = 'Termin[a]l', mode = 'n'},
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
 
