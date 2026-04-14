@@ -4,7 +4,7 @@ return {
     name = 'catppuccin',
     priority = 1000,
     opts = {
-      flavour = 'macchiato',
+      flavour = 'mocha',
       integrations = {
         rainbow_delimiters = true,
         treesitter = true,
@@ -14,7 +14,7 @@ return {
     },
     config = function(_, opts)
       require('catppuccin').setup(opts)
-      vim.cmd 'colorscheme catppuccin-macchiato'
+      vim.cmd 'colorscheme catppuccin-mocha'
       vim.api.nvim_set_hl(0, 'SnacksDashboardHeader', { fg = '#c6a0f6' })
     end,
   },
