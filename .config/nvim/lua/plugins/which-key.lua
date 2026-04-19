@@ -63,6 +63,8 @@ return {
 
       -- Document existing key chains
       spec = {
+        { 'gr', group = 'Go to [R]eferences' },
+        { 'gs', group = '[S]urround', mode = { 'n', 'x', 'o' } },
         { '<leader>c', group = '[C]ode', mode = { 'n', 'x' } },
         { '<leader>d', group = '[D]ocument' },
         { '<leader>r', group = '[R]ename' },

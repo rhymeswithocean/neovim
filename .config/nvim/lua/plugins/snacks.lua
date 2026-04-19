@@ -8,6 +8,9 @@ return {
       notifier = { enabled = true },
       indent = {
         enabled = true,
+        filter = function(buf)
+          return vim.bo[buf].filetype ~= 'markdown'
+        end,
         animate = {
           enabled = true,
           style = 'out',
@@ -19,6 +22,9 @@ return {
         },
         scope = {
           enabled = true,
+          filter = function(buf)
+            return vim.bo[buf].filetype ~= 'markdown'
+          end,
           char = '│',
           underline = true,
         },
