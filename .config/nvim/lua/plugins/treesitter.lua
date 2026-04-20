@@ -5,7 +5,7 @@ return {
     event = { 'BufReadPost', 'BufNewFile' },
     build = ':TSUpdate',
     dependencies = {
-      { 'nvim-treesitter/treesitter-parser-registry' },
+      { 'neovim-treesitter/treesitter-parser-registry' },
       {
         'nvim-treesitter/nvim-treesitter-textobjects',
         branch = 'main',
