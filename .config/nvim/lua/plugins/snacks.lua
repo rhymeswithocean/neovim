@@ -9,7 +9,8 @@ return {
       indent = {
         enabled = true,
         filter = function(buf)
-          return vim.bo[buf].filetype ~= 'markdown'
+          local exclude = { mason = true, markdown = true }
+          return exclude[vim.bo[buf].filetype]
         end,
         animate = {
           enabled = true,
