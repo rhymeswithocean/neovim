@@ -21,7 +21,8 @@ require('lazy').setup({
   require 'plugins.oil',
   require 'plugins.autopairs',
   require 'plugins.java',
-  require 'plugins.snacks',
+  require 'plugins.scrollview',
+  require 'plugins.snacks'
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
