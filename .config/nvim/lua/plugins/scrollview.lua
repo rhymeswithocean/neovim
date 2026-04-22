@@ -3,7 +3,7 @@ return {
   event = { "BufReadPost", "BufNewFile" },
   opts = {
     current_only = false,
-    signs_on_startup = { "diagnostics", "search", "marks", "cursor", "gitsigns" },
+    signs_on_startup = { "search", "cursor" },
     excluded_filetypes = {
       "prompt",
       "TelescopePrompt",
@@ -13,11 +13,6 @@ return {
       "mason",
     },
   },
-  config = function(_, opts)
-    require("scrollview").setup(opts)
-    -- gitsigns contrib integration
-    require("scrollview.contrib.gitsigns")
-  end,
 }
 
 -- vim: ts=2 sts=2 sw=2 et

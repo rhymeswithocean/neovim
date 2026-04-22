@@ -1,6 +1,6 @@
 return {
   {
-    'echasnovski/mini.nvim',
+    'nvim-mini/mini.nvim',
     event = 'VeryLazy',
     config = function()
       require('mini.ai').setup { n_lines = 500 }
@@ -25,6 +25,7 @@ return {
         return '%2l:%-2v'
       end
     end,
+
   },
 }
 -- vim: ts=2 sts=2 sw=2 et
