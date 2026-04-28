@@ -1,5 +1,3 @@
--- NOTE: Plugins can also be configured to run Lua code when they are loaded.
---
 -- This is often very useful to both group configuration, as well as handle
 -- lazy loading plugins that don't need to be loaded immediately at startup.
 --
@@ -74,10 +72,7 @@ return {
         { '<leader>t', group = '[T]oggle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
 
-        { '<leader>e', group = '[E]xplorer' },
-        { '<leader>ec', '<cmd>Neotree close<CR>', desc = 'Close file explorer' },
-        { '<leader>ef', '<cmd>Neotree focus<CR>', desc = 'Focus file explorer' },
-        { '<leader>er', '<cmd>Neotree reveal<CR>', desc = 'Reveal file explorer' },
+        { '<leader>e', function() require('fzf-lua').builtin() end, desc = 'Open FzfLua' },
 
         { '<leader>o', group = '[O]pen' },
         { '<leader>ot', group = '[T]erminal' },
@@ -86,8 +81,7 @@ return {
         { '<leader>otb', '<cmd>terminal<CR><C-End>i', desc = 'Open a terminal in a new buffer' },
 
         { '<leader><Tab>', group = '[Tab]s' },
-        { '<leader><Tab>n', '<cmd>tabnew<CR>', desc = 'New Tab' },
-        { '<leader><Tab><Tab>', '<cmd>tabNext<CR>', desc = 'Next Tab' },
+        { '<leader><Tab><Tab>', '<cmd>FzfLua tabs<CR>', desc = 'Next Tab' },
         { '<leader><Tab>p', '<cmd>tabprevious<CR>', desc = 'Previous Tab' },
         { '<leader><Tab>c', '<cmd>tabclose<CR>', desc = 'Close Tab' },
         { '<leader><Tab>o', '<cmd>tabonly<CR>', desc = 'Close Other Tab' },
@@ -99,9 +93,6 @@ return {
         { '<leader><Tab>mp', '<cmd>tabmove -N<CR>', desc = 'Move Tab Previous' },
         { '<leader><Tab>mf', '<cmd>tabmove 0<CR>', desc = 'Move Tab First' },
         { '<leader><Tab>ml', '<cmd>tabmove<CR>', desc = 'Move Tab Last' },
-
-        { '<leader>b', group = '[B]uffer' },
-        { '<leader>bp', '<cmd>BufferLineTogglePin<CR>', desc = 'Toggle Pinned Buffer' },
 
         { '<leader>bg', group = '[G]oto' },
         { '<leader>bgn', '<cmd>BufferLineCycleNext<CR>', desc = 'Next Buffer' },
